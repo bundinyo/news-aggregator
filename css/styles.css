@@ -1,0 +1,70 @@
+/* Kopfzeile */
+.header-section {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  padding: 60px 0;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Uhrzeitbereich */
+.clock-container {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #555;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* News-Items */
+.news-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.news-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Paginierungs-Buttons */
+.pagination-btn {
+  margin: 0 5px;
+}
+
+/* Scrollbarer Bereich für Feeds im Modal */
+.feeds-scroll {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+/* 
+ * Feste Höhe für den Diagramm-Container, 
+ * damit das Chart nicht das Card-Layout sprengt.
+ */
+.chart-card-body {
+  /* Optional: Falls du willst, dass die Cardbody eine feste Höhe hat
+     .chart-card-body { height: 400px; overflow: hidden; }
+     Das Problem: Dann haben Titel + Canvas evtl. nicht genug Platz. 
+     Deshalb lösen wir es lieber in .chart-wrapper 
+  */
+}
+
+/* 
+ * Hier legen wir die Höhe (z. B. 300px) fest 
+ * und verstecken ggf. Überlauf (Tooltip).
+ */
+.chart-wrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;     /* Feste Höhe */
+  overflow: hidden;  /* Verhindert, dass die Tooltip das Element vergrößert */
+}
+
+.chart-wrapper canvas {
+  width: 100%;
+  height: 100%;
+  display: block; /* Verhindert Standard-canvas Inline-Verhalten */
+}
