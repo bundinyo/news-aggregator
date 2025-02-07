@@ -5,7 +5,7 @@ This project is a simple prototype using Bootstrap for styling and custom JavaSc
 ## Project Structure
 
 ```
-bootstrap-prototype
+news-aggregator
 ├── css
 │   └── styles.css        # Custom styles to override Bootstrap defaults
 ├── js
@@ -20,7 +20,7 @@ bootstrap-prototype
 1. **Clone the repository:**
    ```
    git clone <repository-url>
-   cd bootstrap-prototype
+   cd news-aggregator
    ```
 
 2. **Install dependencies:**
